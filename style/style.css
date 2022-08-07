@@ -247,6 +247,12 @@ input {
     margin-top: 5%;
 }
 
+.slide-project-button {
+    position: absolute;
+    left: 65%;
+    bottom: 3%;
+    width: 25px;
+}
 
 #slide1:checked ~ .s1{ 
     margin-left: 0;
