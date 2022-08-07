@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 1000px) {
+
+    .sobre-content {
+        width: 70%;
+    }
+
+    .section-sobre {
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sobre-content {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    .inicio-content {
+        font-size: 5vw;
+    }
+
+    .inicio-content > h1 {
+        font-size: 15vw;
+    }
+
+    .sobre-content {
+        width: 80%;
+        font-size: 2vw;
+        line-height: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+}
