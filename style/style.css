@@ -143,6 +143,8 @@ header {
     font-size: 1vw;
     font-family: var(--font-regular), var(--font-default);
     text-shadow: 0 0 5px black;
+} .sobre-content {
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .sobre-content div {
@@ -161,6 +163,47 @@ header {
     padding-bottom: 10px;
 }
 
+/* ----- Configurações da Secção Habilidades ----- */
+
+.habilidades-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-height: 65vh;
+}
+
+.habilidades-content-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.habilidades-box {    
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 5%;
+    font-family: var(--font-regular);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.habilidades-box p{
+    width: 40%;
+    margin: auto;
+}
+
+
+.habilidades-content img {
+    width: 4em;
+    cursor: pointer;
+} .habilidades-content i:hover {
+    cursor: pointer;
+    transition: 5s;
+}
 
 /* ----- Configurações da Secção Projetos ----- */
 
@@ -231,27 +274,31 @@ input {
 
 .slide-box {
     position: absolute;
-    transform: translateX(-50%);
-    left: 50%;
     bottom: 0%;
 
-    width: 40%;
-    border-radius: 50px 50px 0px 0px;
+    width: 100%;
     padding: 30px;
     padding-bottom: 5%;
     font-family: var(--font-regular);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .slide-box h2 {
     text-align: center;
-    margin-top: 5%;
+}
+
+.slide-box p {
+    width: 40%;
+    margin: auto;
+    text-align: justify;
 }
 
 .slide-project-button {
     position: absolute;
     left: 65%;
-    bottom: 3%;
-    width: 25px;
+    bottom: 4%;
+} .slide-project-button i {
+    width: 100px;
 }
 
 #slide1:checked ~ .s1{ 

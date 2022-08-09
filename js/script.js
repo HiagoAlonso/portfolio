@@ -3,6 +3,7 @@ const slideButton2 = document.querySelector("#slide2")
 const slideButton3 = document.querySelector("#slide3")
 const slideBox = document.querySelector(".slide-box")
 const slideProjectButton = document.querySelector(".slide-project-button")
+const habilidadeBox = document.querySelector(".habilidades-box")
 
 slideButton1.addEventListener('click', () => {
     slideBox.innerHTML = 
@@ -16,17 +17,18 @@ slideButton1.addEventListener('click', () => {
 slideButton2.addEventListener('click', () => {
     slideBox.innerHTML = 
     `
+    <h2>Projeto Doguinho's</h2>
+    <p>Este foi meu primeiro projeto em <strong>Bootstrap</strong>. Sua criação não demorou menos que algumas poucas horas, provando a eficiência do Framework.</p>
+    `
+    slideProjectButton.setAttribute('href', 'https://hiagoalonso.github.io/projeto-doguinhos/')
+})
+
+slideButton3.addEventListener('click', () => {
+    slideBox.innerHTML = 
+    `
     <h2>Projeto Dungeons</h2>
     <p>Este foi meu primeiro projeto de um <strong>Site Completo</strong>. Inspirei-me em memórias dos Fóruns e Páginas de jogos RPG que amava na infância. Neste dediquei-me à testar muitos recursos novos, e sua interatividade está toda nas mãos do <strong>jQuery</strong>.</p>
     `
     slideProjectButton.setAttribute('href', 'https://hiagoalonso.github.io/Dungeons-Dragons/')
 })
 
-slideButton3.addEventListener('click', () => {
-    slideBox.innerHTML = 
-    `
-    <h2>Projeto Doguinho's</h2>
-    <p>Este foi meu primeiro projeto em <strong>Bootstrap</strong>. Sua criação não demorou menos que algumas poucas horas, provando a eficiência do Framework.</p>
-    `
-    slideProjectButton.setAttribute('href', 'https://hiagoalonso.github.io/projeto-doguinhos/')
-})
