@@ -3,7 +3,6 @@ const slideButton2 = document.querySelector("#slide2")
 const slideButton3 = document.querySelector("#slide3")
 const slideBox = document.querySelector(".slide-box")
 const slideProjectButton = document.querySelector(".slide-project-button")
-const habilidadeBox = document.querySelector(".habilidades-box")
 
 slideButton1.addEventListener('click', () => {
     slideBox.innerHTML = 
@@ -31,4 +30,3 @@ slideButton3.addEventListener('click', () => {
     `
     slideProjectButton.setAttribute('href', 'https://hiagoalonso.github.io/Dungeons-Dragons/')
 })
-
