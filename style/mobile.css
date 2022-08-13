@@ -2,6 +2,10 @@
 
 @media only screen and (max-width: 1000px) {
 
+
+    /* Configurações da Secção Sobre */
+
+
     .sobre-content {
         width: 70%;
     }
@@ -9,32 +13,133 @@
     .section-sobre {
         background-position: center center;
     }
+
+    .sobre-content {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        font-size: 0.8em;
+        line-height: 1.8em;
+    }
+
+    .sobre-content ul{
+        list-style: none;
+        line-height: 2em;
+        text-align: center;
+    }
+
+
+    /* Configurações do Rodapé */
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 2.5vw;
+    }
+
 }
 
-@media only screen and (max-width: 800px) {
-    .sobre-content {
-        margin: auto;
+@media only screen and (max-width: 700px) {
+
+
+    /* Configurações de Menu Mobile */
+
+
+    header {
+        justify-content: space-around;
+        height: auto;
+        padding: 10px;
     }
+
+    .header-logo img {
+        height: 2em;
+        width: 4em;
+    }
+
+    header .fa-bars {
+        display: flex;
+        position: fixed;
+        left: 20px;
+        color: skyblue;
+    }
+
+    .header-menu {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 750px) {
 
-    .inicio-content {
-        font-size: 5vw;
+
+    /* Configurações dos Icones de Habilidades */
+
+
+    .fa-jquery {grid-area: ico1;}
+    .fa-node-js {grid-area: ico2;}
+    .fa-js {grid-area: ico3;}
+    .fa-css3-alt {grid-area: ico4;}
+    .fa-html5 {grid-area: ico5;}
+    .fa-bootstrap {grid-area: ico6;}
+    .fa-square-github {grid-area: ico7;}
+    .fa-git-alt {grid-area: ico8;}
+    .fa-python {grid-area: ico9;}
+
+    .habilidades-content-row {
+        width: 100%;
+        margin: 20px;
+        display: grid;
+        grid-column: 1fr 1fr 1fr;
+        grid-row: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "ico1 ico2 ico3"
+        "ico4 ico5 ico6"
+        "ico7 ico8 ico9"
+        ;
     }
 
-    .inicio-content > h1 {
-        font-size: 15vw;
+    .habilidades-content-box {
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.95);
+        color: white;
+
     }
 
-    .sobre-content {
-        width: 80%;
-        font-size: 2vw;
-        line-height: 1.4em;
+    .content-box h2, .content-box a{
+        color: skyblue;
+    } .content-box a.button {
+        color: black;
     }
-}
 
-@media only screen and (max-width: 600px) {
+    .content-box p{
+        width: 100%;
+        font-size: 0.8em;
+    }
 
 
+    /* Configurações dos Projetos Versão Mobile */
+    
+
+    @media only screen and (max-width: 700px) {
+        .slide img {
+            height: 300px;
+            width: 150px;
+        }
+
+        .slide {
+            padding: 60px;
+        }
+
+        .slide-box {
+            display: none;
+            width: 100%;
+            left: 0%;
+            font-size: 3vw;
+        }
+
+        .slide-project-button {
+            bottom: 90%;
+            left: 85%;
+        }
+    }
 }
