@@ -4,6 +4,7 @@ const slideButton3 = document.querySelector("#slide3")
 const slideBox = document.querySelector(".slide-box")
 const slideProjectButton = document.querySelector(".slide-project-button")
 
+
 slideButton1.addEventListener('click', () => {
     slideBox.innerHTML = 
     `
