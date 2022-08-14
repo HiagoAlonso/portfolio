@@ -137,7 +137,7 @@ header {
     width: 100%;
     height: 100vh;
     background: linear-gradient(to top, black, rgb(0, 0, 80));
-    background: url(../assets/retrato-pessoal-panorama.jpg) fixed left center/cover no-repeat;
+    background: url(../assets/retrato-pessoal-panorama-emerald.jpg) fixed left center/cover no-repeat;
 
     display: flex;
     justify-content: center;
@@ -146,13 +146,11 @@ header {
 }
 
 .section-inicio a {
-    background-color: rgba(37, 122, 250, 0.842);
-    border: 1px solid blue;
+    background-color: rgba(37, 122, 250, 0.9);
     text-shadow: 0 0 1px white;
-    border-radius: 300px;
-    padding: 5px 20px;
-    margin: 10px;
-    font-size: 0.8em;
+    color: whitesmoke;
+    font-weight: 400;
+
     font-family: var(--font-default);
 } .section-inicio a:hover {
     background-color: rgba(37, 122, 250, 1);
@@ -163,28 +161,28 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-    background: rgb(0, 0, 97) url("https://media.giphy.com/media/k3CeSrt9IZ6aorWCy1/giphy-downsized-large.gif") top/cover;
-
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
-.inicio-content h1, .inicio-content h2 {
+.inicio-content h1, .inicio-content h2, .inicio-content p {
+    padding: 0; margin: 0;
+    font-family: var(--font-zelda);
+    letter-spacing: 0.06em;
+    color: rgb(255, 51, 51);
+    text-shadow: 0 0 1px black;
     font-family: var(--font-zelda);
 }
 
 .inicio-content h1 {
     font-family: var(--font-triforce);
     font-size: 3em;
-    text-shadow: 0 0 1px rgba(0, 255, 255, 0.5);
+    letter-spacing: 0.1em;
+    color: whitesmoke;
 }
 
-.inicio-content p{
-    text-shadow: 0 0 1px rgba(0, 255, 255);
+.inicio-content p {
+    color: whitesmoke;
 }
+
 
 /* ----- Configurações da Secção Sobre ----- */
 

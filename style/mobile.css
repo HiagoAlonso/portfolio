@@ -37,13 +37,25 @@
         font-size: 2.5vw;
     }
 
+    /**/
+
+    .section-title {
+        padding: 15% 30px;
+    }
+
+    .section-contato h1 {
+        padding-top: 20px;
+    }
+    #contato .section-title {
+        padding: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 700px) {
 
 
     /* Configurações de Menu Mobile */
-
 
     header {
         justify-content: space-around;
@@ -67,6 +79,25 @@
         display: none;
     }
 
+
+    /* Configurações da Secção Inicial */
+
+    .inicio-content {
+        align-items: center;
+    }
+    .inicio-content h1 {
+        font-size: 14vw;
+    } 
+    .inicio-content h2 {
+        font-size: 9vw;
+    }
+    .inicio-content p {
+        font-size: 6vw;
+    }
+    .inicio-content a {
+        margin-top: 20px;
+        font-size: 0.7em;
+    }
 }
 
 @media only screen and (max-width: 750px) {
