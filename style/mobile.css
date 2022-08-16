@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+
+@keyframes menuAnimation {
+
+    0% {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+    }
+
+    100% {
+        position: fixed;
+        top: 70px;
+        left: 10px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
 
 
@@ -15,7 +31,7 @@
     }
 
     .sobre-content {
-        text-align: center;
+        text-align: justify;
         background-color: rgba(0, 0, 0, 0.9);
         width: 100%;
         font-size: 0.8em;
@@ -23,9 +39,9 @@
     }
 
     .sobre-content ul{
-        list-style: none;
+        list-style: inside;
         line-height: 2em;
-        text-align: center;
+        text-align: justify;
     }
 
 
@@ -37,8 +53,6 @@
         font-size: 2.5vw;
     }
 
-    /**/
-
     .section-title {
         padding: 15% 30px;
     }
@@ -46,6 +60,7 @@
     .section-contato h1 {
         padding-top: 20px;
     }
+
     #contato .section-title {
         padding: 50px;
     }
@@ -75,8 +90,44 @@
         color: skyblue;
     }
 
+    header {
+        justify-content: center;
+    }
+
     .header-menu {
         display: none;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid rgb(50, 50, 50);
+    } 
+
+    .header-menu strong{
+        background-color: black;
+        border-radius: 300px;
+        padding: 5px 12px;
+        font-size: 1.6em;
+        box-shadow: 0 0 3px rgb(50, 50, 50);
+    }
+
+    .header-menu ul {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-menu li {
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-radius: 20px;
+        box-shadow: 0 0 3px rgb(50, 50, 50);
+        width: 100%;
+        padding: 1px 25px 1px 0px;
+        font-size: 1.2em;
+        letter-spacing: 0.2em;
     }
 
 
@@ -165,12 +216,19 @@
             display: none;
             width: 100%;
             left: 0%;
-            font-size: 3vw;
+            font-size: 3.5vw;
         }
 
         .slide-project-button {
             bottom: 90%;
             left: 85%;
+        }
+
+        .fa-circle-info {
+            position: absolute;
+            bottom: 80%;
+            left: 85%;
+            color: skyblue;
         }
     }
 }

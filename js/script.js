@@ -5,6 +5,7 @@ const slideBox = document.querySelector(".slide-box")
 const slideProjectButton = document.querySelector(".slide-project-button")
 
 
+
 slideButton1.addEventListener('click', () => {
     slideBox.innerHTML = 
     `
@@ -31,3 +32,87 @@ slideButton3.addEventListener('click', () => {
     `
     slideProjectButton.setAttribute('href', 'https://hiagoalonso.github.io/Dungeons-Dragons/')
 })
+
+
+
+
+const menuItems = document.querySelectorAll(".header-menu a")
+const arrowScrollTop = document.querySelector(".fa-arrow-up-from-bracket")
+
+menuItems.forEach(item => {
+    item.addEventListener('click', scrollToIdOnClick)
+})
+
+function scrollToIdOnClick(event) {
+    event.preventDefault()
+    const to = getScrollTopByHref(event.target)
+    scrollToPosition(to)
+}
+
+function getScrollTopByHref(element) {
+    const id = element.getAttribute('href')
+    return document.querySelector(id).offsetTop
+}
+
+function scrollToPosition(to) {
+    smoothScrollTo(0, to)
+}
+
+arrowScrollTop.addEventListener('click', () => {
+    smoothScrollTo(0, 0)
+})
+
+
+
+const menuIco = document.querySelector(".fa-bars")
+const menuBar = document.querySelector(".header-menu")
+const aboutProjectIco = document.querySelector(".fa-circle-info")
+
+menuIco.addEventListener('click', () => {
+    if (menuBar.style.display == "block") {
+        menuBar.style.display = "none"
+    } else {
+        menuBar.style.display = "block"
+    }
+})
+
+aboutProjectIco.addEventListener('click', () => {
+    if (slideBox.style.display == "block") {
+        slideBox.style.display = "none"
+    } else {
+        slideBox.style.display = "block"
+    }
+})
+
+
+/**
+ * Smooth scroll animation   -   Origamid
+ * @param {int} endX: destination x coordinate
+ * @param {int} endY: destination y coordinate
+ * @param {int} duration: animation duration in ms
+ */
+ function smoothScrollTo(endX, endY, duration) {
+    const startX = window.scrollX || window.pageXOffset;
+    const startY = window.scrollY || window.pageYOffset;
+    const distanceX = endX - startX;
+    const distanceY = endY - startY;
+    const startTime = new Date().getTime();
+  
+    duration = typeof duration !== 'undefined' ? duration : 400;
+  
+    // Easing function
+    const easeInOutQuart = (time, from, distance, duration) => {
+      if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
+      return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+    };
+  
+    const timer = setInterval(() => {
+      const time = new Date().getTime() - startTime;
+      const newX = easeInOutQuart(time, startX, distanceX, duration);
+      const newY = easeInOutQuart(time, startY, distanceY, duration);
+      if (time >= duration) {
+        clearInterval(timer);
+      }
+      window.scroll(newX, newY);
+    }, 1000 / 60); // 60 fps
+  };

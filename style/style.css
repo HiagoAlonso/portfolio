@@ -167,31 +167,47 @@ header {
     padding: 0; margin: 0;
     font-family: var(--font-zelda);
     letter-spacing: 0.06em;
-    color: rgb(255, 51, 51);
+    color: rgb(250, 29, 29);
     text-shadow: 0 0 1px black;
-    font-family: var(--font-zelda);
 }
 
 .inicio-content h1 {
+    background-image: linear-gradient(to top, rgb(95, 196, 236), rgb(221, 221, 221));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
     font-family: var(--font-triforce);
     font-size: 3em;
     letter-spacing: 0.1em;
-    color: whitesmoke;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .inicio-content p {
-    color: whitesmoke;
+    color: rgb(221, 221, 221);
+}
+
+.inicio-content h2 {
+    font-weight: 400;
+}
+
+.fa-arrow-up-from-bracket {
+    color: skyblue;
+    padding: 10px;
+    position: fixed;
+    left: 85vw;
+    top: 85vh;
+    margin-right: 10px;
+    font-size: 2em;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 
 /* ----- Configurações da Secção Sobre ----- */
 
 .section-sobre {
-    background-color: black;
-    background-image: url("../assets/retrato-pessoal-gruta.jpg");
-
-    background-size: cover;
-    background-attachment: fixed;
+    background: black url("../assets/retrato-pessoal-gruta.jpg") fixed right center/cover no-repeat;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
@@ -200,7 +216,7 @@ header {
 
     color: white;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     line-height: 1.7em;
     font-size: 1vw;
     font-family: var(--font-regular), var(--font-default);
@@ -229,7 +245,7 @@ header {
     align-items: center;
     background-color: white;
     min-height: 65vh;
-}
+} 
 
 .habilidades-content-row {
     display: flex;
@@ -240,8 +256,11 @@ header {
     padding: 10px;
 }
 
+.habilidades-content-row label {
+    z-index: 10
+}
+
 .habilidades-content-box {
-    transition: 0.6s;
     width: 100%;
 }
 
@@ -264,7 +283,7 @@ header {
     width: 100%;
     padding: 30px;
     font-family: var(--font-regular);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .content-box p{
