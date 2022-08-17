@@ -3,9 +3,6 @@
 
 @media only screen and (max-width: 1000px) {
 
-    /*CONFIGURAÇÕES GERAIS*/
-    
-
 
     /* Configurações da Secção Sobre */
 
@@ -226,6 +223,10 @@
             bottom: 80%;
             left: 85%;
             color: skyblue;
+        }
+
+        .slide-box p {
+            width: 95%;
         }
     }
 }

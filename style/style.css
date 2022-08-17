@@ -167,8 +167,11 @@ header {
     padding: 0; margin: 0;
     font-family: var(--font-zelda);
     letter-spacing: 0.06em;
-    color: rgb(250, 29, 29);
-    text-shadow: 0 0 1px black;
+    background-image: linear-gradient(to top, rgb(95, 196, 236), rgb(221, 221, 221));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
 }
 
 .inicio-content h1 {
@@ -188,7 +191,10 @@ header {
 }
 
 .inicio-content h2 {
-    font-weight: 400;
+    background-image: linear-gradient(to top, rgb(255, 0, 0),  rgb(200, 200, 200));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .fa-arrow-up-from-bracket {

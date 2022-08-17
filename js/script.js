@@ -1,9 +1,10 @@
 const slideButton1 = document.querySelector("#slide1")
 const slideButton2 = document.querySelector("#slide2")
 const slideButton3 = document.querySelector("#slide3")
+
+const slides = document.querySelectorAll(".slide > img")
 const slideBox = document.querySelector(".slide-box")
 const slideProjectButton = document.querySelector(".slide-project-button")
-
 
 
 slideButton1.addEventListener('click', () => {
@@ -64,25 +65,45 @@ arrowScrollTop.addEventListener('click', () => {
 
 
 
+
 const menuIco = document.querySelector(".fa-bars")
 const menuBar = document.querySelector(".header-menu")
 const aboutProjectIco = document.querySelector(".fa-circle-info")
 
-menuIco.addEventListener('click', () => {
-    if (menuBar.style.display == "block") {
-        menuBar.style.display = "none"
+function displayToggle(target, emit){
+    if (target.style.display == "block") {
+        target.style.display = "none"
     } else {
-        menuBar.style.display = "block"
+        target.style.display = "block"
     }
+    emit.addEventListener('mouseleave', () => {
+        target.style.display = "none"
+    })
+}
+
+menuIco.addEventListener('click', () => {
+    displayToggle(menuBar, menuBar)
 })
 
 aboutProjectIco.addEventListener('click', () => {
-    if (slideBox.style.display == "block") {
-        slideBox.style.display = "none"
-    } else {
-        slideBox.style.display = "block"
-    }
+    displayToggle(slideBox, aboutProjectIco)
 })
+
+if (screen.width < 800) { 
+    slides.forEach(slide => {
+        slide.addEventListener('click', () => {
+            displayToggle(slideBox, slide)
+        })
+    })
+}
+
+
+
+
+
+
+
+
 
 
 /**
