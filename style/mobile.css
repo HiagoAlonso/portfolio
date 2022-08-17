@@ -1,22 +1,10 @@
 @charset "UTF-8";
 
 
-@keyframes menuAnimation {
-
-    0% {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-    }
-
-    100% {
-        position: fixed;
-        top: 70px;
-        left: 10px;
-    }
-}
-
 @media only screen and (max-width: 1000px) {
+
+    /*CONFIGURAÇÕES GERAIS*/
+    
 
 
     /* Configurações da Secção Sobre */
@@ -71,6 +59,15 @@
 
 
     /* Configurações de Menu Mobile */
+
+    .fa-arrow-up-from-bracket {
+        color: skyblue;
+        padding: 10px;
+        position: fixed;
+        left: 85vw;
+        top: 85vh;
+    }
+
 
     header {
         justify-content: space-around;
