@@ -58,8 +58,6 @@
 @media only screen and (max-width: 700px) {
 
 
-    /* Configurações de Menu Mobile */
-
     .fa-arrow-up-from-bracket {
         color: skyblue;
         padding: 10px;
@@ -67,6 +65,8 @@
         left: 85vw;
         top: 85vh;
     }
+
+    /* Configurações de Menu Mobile */
 
 
     header {
