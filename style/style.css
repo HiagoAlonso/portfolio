@@ -53,7 +53,7 @@
     font-weight: 600;
     border-radius: 300px;
     padding: 5px 20px;
-    margin: 10px;
+    margin: 5px;
     font-size: 0.8em;
     font-family: var(--font-default);
 }
@@ -103,7 +103,7 @@ header {
 
 .header-logo img {
     margin-left: 30px;
-    height: 2em;
+    height: 2.5em;
 }
 
 .header-menu ul {
@@ -186,6 +186,10 @@ header {
     text-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
+.inicio-content h1 strong{
+    margin-left: -35px;
+}
+
 .inicio-content p {
     color: rgb(221, 221, 221);
 }
@@ -195,6 +199,7 @@ header {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    font-size: 1.2em;
 }
 
 .fa-arrow-up-from-bracket {
@@ -222,7 +227,7 @@ header {
 
     color: white;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.88);
     line-height: 1.7em;
     font-size: 1vw;
     font-family: var(--font-regular), var(--font-default);

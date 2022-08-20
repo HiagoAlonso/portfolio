@@ -17,7 +17,7 @@
 
     .sobre-content {
         text-align: justify;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.75);
         width: 100%;
         font-size: 0.8em;
         line-height: 1.8em;
@@ -63,6 +63,7 @@
         top: 85vh;
     }
 
+
     /* Configurações de Menu Mobile */
 
 
@@ -73,8 +74,7 @@
     }
 
     .header-logo img {
-        height: 2em;
-        width: 4em;
+        height: 3em;
     }
 
     header .fa-bars {
@@ -127,11 +127,15 @@
 
     /* Configurações da Secção Inicial */
 
+    .section-inicio {
+        background: url(../assets/retrato-pessoal-panorama-emerald-png.jpg) left center/cover no-repeat;
+    }
+
     .inicio-content {
         align-items: center;
     }
     .inicio-content h1 {
-        font-size: 14vw;
+        font-size: 15vw;
     } 
     .inicio-content h2 {
         font-size: 9vw;
@@ -143,6 +147,15 @@
         margin-top: 20px;
         font-size: 0.7em;
     }
+
+    .inicio-content h1 strong{
+        margin-left: -15px;
+    }
+
+    .section-sobre {
+        background: black url("../assets/retrato-pessoal-gruta-mobile.jpg") center center/cover no-repeat;
+    }
+
 }
 
 @media only screen and (max-width: 750px) {
