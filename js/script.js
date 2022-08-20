@@ -70,29 +70,26 @@ const menuIco = document.querySelector(".fa-bars")
 const menuBar = document.querySelector(".header-menu")
 const aboutProjectIco = document.querySelector(".fa-circle-info")
 
-function displayToggle(target, emit){
-    if (target.style.display == "block") {
-        target.style.display = "none"
+function moveToggle(target, emit){
+    if (target.style.left == "-100vw") {
+        target.style.left = "0"
     } else {
-        target.style.display = "block"
+        target.style.left = "-100vw"
     }
-    emit.addEventListener('mouseleave', () => {
-        target.style.display = "none"
-    })
 }
 
 menuIco.addEventListener('click', () => {
-    displayToggle(menuBar, menuBar)
+    moveToggle(menuBar, menuBar)
 })
 
 aboutProjectIco.addEventListener('click', () => {
-    displayToggle(slideBox, aboutProjectIco)
+    moveToggle(slideBox, aboutProjectIco)
 })
 
 if (screen.width < 800) { 
     slides.forEach(slide => {
         slide.addEventListener('click', () => {
-            displayToggle(slideBox, slide)
+            moveToggle(slideBox, slide)
         })
     })
 }

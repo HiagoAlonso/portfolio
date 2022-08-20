@@ -89,14 +89,15 @@
     }
 
     .header-menu {
-        display: none;
         position: absolute;
-        top: 55px;
-        left: 0;
+        transition: .4s;
+        top: 70px;
+        left: -100vw;
         background-color: rgba(0, 0, 0, 0.7);
-        width: 100%;
+        width: 80%;
         padding: 20px;
         border-bottom: 1px solid rgb(50, 50, 50);
+        border-radius: 0px 0px 50px 0px;
     } 
 
     .header-menu strong{
@@ -108,13 +109,11 @@
     }
 
     .header-menu ul {
-        align-items: center;
+        align-items: left;
         flex-direction: column;
     }
 
     .header-menu li {
-        justify-content: center;
-        align-items: center;
         background-color: black;
         border-radius: 20px;
         box-shadow: 0 0 3px rgb(50, 50, 50);
@@ -220,10 +219,11 @@
         }
 
         .slide-box {
-            display: none;
+            transition: .3s;
+            position: absolute;
             width: 100%;
-            left: 0%;
             font-size: 3.5vw;
+            left: -100vw;
         }
 
         .slide-project-button {
